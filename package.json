@@ -20,7 +20,7 @@
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
     "dev": "run-p start_dev autobuild",
-    "start_dev": "sirv public --single --dev",
-    "start": "sirv public --single"
+    "start_dev": "sirv docs --single --dev",
+    "start": "sirv docs --single"
   }
 }

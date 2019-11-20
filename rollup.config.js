@@ -13,7 +13,7 @@ export default {
     sourcemap: true,
     format: "iife",
     name: "app",
-    file: "public/build/bundle.js",
+    file: "docs/build/bundle.js",
   },
   plugins: [
     json({
@@ -42,7 +42,7 @@ export default {
       // we'll extract any component CSS out into
       // a separate file — better for performance
       css: css => {
-        css.write("public/build/bundle.css");
+        css.write("docs/build/bundle.css");
       },
     }),
 
@@ -61,7 +61,7 @@ export default {
     // the bundle has been generated
     !production && serve(),
 
-    // Watch the `public` directory and refresh the
+    // Watch the `docs` directory and refresh the
     // browser on changes when not in production
     !production && livereload("public"),
 
